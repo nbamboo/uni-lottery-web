@@ -19288,7 +19288,19 @@ exports.default = _default;
 /* 169 */,
 /* 170 */,
 /* 171 */,
-/* 172 */
+/* 172 */,
+/* 173 */,
+/* 174 */,
+/* 175 */,
+/* 176 */,
+/* 177 */,
+/* 178 */,
+/* 179 */,
+/* 180 */,
+/* 181 */,
+/* 182 */,
+/* 183 */,
+/* 184 */
 /*!************************************************************************************************!*\
   !*** /Users/nbamboo/Documents/uni-lottery-web/uni_modules/uview-ui/components/u-tabs/props.js ***!
   \************************************************************************************************/
@@ -19370,14 +19382,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 173 */,
-/* 174 */,
-/* 175 */,
-/* 176 */,
-/* 177 */,
-/* 178 */,
-/* 179 */,
-/* 180 */
+/* 185 */,
+/* 186 */,
+/* 187 */,
+/* 188 */,
+/* 189 */,
+/* 190 */,
+/* 191 */,
+/* 192 */
 /*!*************************************************************************************************!*\
   !*** /Users/nbamboo/Documents/uni-lottery-web/uni_modules/uview-ui/components/u-image/props.js ***!
   \*************************************************************************************************/
@@ -19479,12 +19491,12 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 181 */,
-/* 182 */,
-/* 183 */,
-/* 184 */,
-/* 185 */,
-/* 186 */
+/* 193 */,
+/* 194 */,
+/* 195 */,
+/* 196 */,
+/* 197 */,
+/* 198 */
 /*!******************************************************************************************!*\
   !*** /Users/nbamboo/Documents/uni-lottery-web/uni_modules/uview-ui/libs/mixin/button.js ***!
   \******************************************************************************************/
@@ -19514,7 +19526,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 187 */
+/* 199 */
 /*!********************************************************************************************!*\
   !*** /Users/nbamboo/Documents/uni-lottery-web/uni_modules/uview-ui/libs/mixin/openType.js ***!
   \********************************************************************************************/
@@ -19556,7 +19568,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 188 */
+/* 200 */
 /*!**************************************************************************************************!*\
   !*** /Users/nbamboo/Documents/uni-lottery-web/uni_modules/uview-ui/components/u-button/props.js ***!
   \**************************************************************************************************/
@@ -19735,14 +19747,21 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 189 */,
-/* 190 */,
-/* 191 */,
-/* 192 */,
-/* 193 */,
-/* 194 */,
-/* 195 */,
-/* 196 */
+/* 201 */,
+/* 202 */,
+/* 203 */,
+/* 204 */,
+/* 205 */,
+/* 206 */,
+/* 207 */,
+/* 208 */,
+/* 209 */,
+/* 210 */,
+/* 211 */,
+/* 212 */,
+/* 213 */,
+/* 214 */,
+/* 215 */
 /*!*************************************************************************************************!*\
   !*** /Users/nbamboo/Documents/uni-lottery-web/uni_modules/uview-ui/components/u-badge/props.js ***!
   \*************************************************************************************************/
@@ -19832,21 +19851,21 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 197 */,
-/* 198 */,
-/* 199 */,
-/* 200 */,
-/* 201 */,
-/* 202 */,
-/* 203 */,
-/* 204 */,
-/* 205 */,
-/* 206 */,
-/* 207 */,
-/* 208 */,
-/* 209 */,
-/* 210 */,
-/* 211 */
+/* 216 */,
+/* 217 */,
+/* 218 */,
+/* 219 */,
+/* 220 */,
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */
 /*!********************************************************************************************************!*\
   !*** /Users/nbamboo/Documents/uni-lottery-web/uni_modules/uview-ui/components/u-loading-icon/props.js ***!
   \********************************************************************************************************/
@@ -19923,14 +19942,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 212 */,
-/* 213 */,
-/* 214 */,
-/* 215 */,
-/* 216 */,
-/* 217 */,
-/* 218 */,
-/* 219 */
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */
 /*!************************************************************************************************!*\
   !*** /Users/nbamboo/Documents/uni-lottery-web/uni_modules/uview-ui/components/u-icon/icons.js ***!
   \************************************************************************************************/
@@ -20161,7 +20180,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 220 */
+/* 239 */
 /*!************************************************************************************************!*\
   !*** /Users/nbamboo/Documents/uni-lottery-web/uni_modules/uview-ui/components/u-icon/props.js ***!
   \************************************************************************************************/
@@ -20268,14 +20287,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 221 */,
-/* 222 */,
-/* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */
+/* 240 */,
+/* 241 */,
+/* 242 */,
+/* 243 */,
+/* 244 */,
+/* 245 */,
+/* 246 */,
+/* 247 */
 /*!******************************************************************************************************!*\
   !*** /Users/nbamboo/Documents/uni-lottery-web/uni_modules/uview-ui/components/u-transition/props.js ***!
   \******************************************************************************************************/
@@ -20317,7 +20336,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 229 */
+/* 248 */
 /*!***********************************************************************************************************!*\
   !*** /Users/nbamboo/Documents/uni-lottery-web/uni_modules/uview-ui/components/u-transition/transition.js ***!
   \***********************************************************************************************************/
@@ -20334,7 +20353,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 56));
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 58));
-var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 230));
+var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 249));
 // 定义一个一定时间后自动成功的promise，让调用nextTick方法处，进入下一个then方法
 var nextTick = function nextTick() {
   return new Promise(function (resolve) {
@@ -20426,7 +20445,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 230 */
+/* 249 */
 /*!*************************************************************************************************************!*\
   !*** /Users/nbamboo/Documents/uni-lottery-web/uni_modules/uview-ui/components/u-transition/nvue.ani-map.js ***!
   \*************************************************************************************************************/

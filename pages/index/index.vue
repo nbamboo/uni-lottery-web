@@ -16,188 +16,12 @@
 			<view>
 				<swiper class="swiper-box" :current="currentTab" @change="swiperChange">
 					<swiper-item>
-						<view class="container1">
-							<view class="container2">
-								<view class="u-page__image-item image-type">
-									<u--image :src="srcSsq" width="40px" height="40px"></u--image>
-								</view>
-								<view>
-									<view class="container2-1">
-										<view class="lotteryDesType">{{ssqString}}</view>
-										<view class="lotteryDesDate">2025-02-27(四)</view>
-										<view class="lotteryDesWeekday">周二/四/日</view>
-									</view>
-									<view class="container2-2">
-										<view class="container3">
-											<view class="lotteryNumContainer">
-												<u--image :src="redCircleSrc" width="24px" height="24px"></u--image>
-												<view class="lotteryNumber">7</view>
-											</view>
-											<view class="lotteryNumContainer">
-												<u--image :src="redCircleSrc" width="24px" height="24px"></u--image>
-												<view class="lotteryNumber">8</view>
-											</view>
-											<view class="lotteryNumContainer">
-												<u--image :src="redCircleSrc" width="24px" height="24px"></u--image>
-												<view class="lotteryNumber">16</view>
-											</view>
-											<view class="lotteryNumContainer">
-												<u--image :src="redCircleSrc" width="24px" height="24px"></u--image>
-												<view class="lotteryNumber">18</view>
-											</view>
-											<view class="lotteryNumContainer">
-												<u--image :src="redCircleSrc" width="24px" height="24px"></u--image>
-												<view class="lotteryNumber">25</view>
-											</view>
-											<view class="lotteryNumContainer">
-												<u--image :src="redCircleSrc" width="24px" height="24px"></u--image>
-												<view class="lotteryNumber">32</view>
-											</view>
-											<view class="lotteryNumContainer">
-												<u--image :src="blueCircleSrc" width="24px" height="24px"></u--image>
-												<view class="lotteryNumber">14</view>
-											</view>
-										</view>
-									</view>
-									<view class="container2-3">
-										<view class="u-page__button-item action-button">
-											<u-button text="中奖详情" size="mini" plain shape="circle"
-												type="error"></u-button>
-										</view>
-										<view class="u-page__button-item action-button">
-											<u-button text="往期开奖" size="mini" plain shape="circle"
-												type="error"></u-button>
-										</view>
-										<view class="u-page__button-item action-button">
-											<u-button text="开奖通知" size="mini" plain shape="circle"
-												type="error"></u-button>
-										</view>
-										<view class="u-page__button-item action-button">
-											<u-button text="守号订阅" size="mini" plain shape="circle"
-												type="error"></u-button>
-										</view>
-									</view>
-								</view>
-							</view>
-						</view>
+						<lotteryItem :lotteryItemData="ssqData"></lotteryItem>
+						<lotteryItem :lotteryItemData="kl8Data"></lotteryItem>	
 					</swiper-item>
 					<swiper-item>
-						<view class="container1">
-							<view class="container2">
-								<view class="u-page__image-item image-type">
-									<u--image :src="srcKl8" width="40px" height="40px"></u--image>
-								</view>
-								<view>
-									<view class="container2-1">
-										<view class="lotteryDesType">{{kl8String}}</view>
-										<view class="lotteryDesDate">2025-03-01(日)</view>
-										<view class="lotteryDesWeekday">每日开奖</view>
-									</view>
-									<view class="container2-2">
-										<view class="container3">
-											<view class="lotteryNumContainer">
-												<u--image :src="redCircleSrc" width="24px" height="24px"></u--image>
-												<view class="lotteryNumber">7</view>
-											</view>
-											<view class="lotteryNumContainer">
-												<u--image :src="redCircleSrc" width="24px" height="24px"></u--image>
-												<view class="lotteryNumber">8</view>
-											</view>
-											<view class="lotteryNumContainer">
-												<u--image :src="redCircleSrc" width="24px" height="24px"></u--image>
-												<view class="lotteryNumber">16</view>
-											</view>
-											<view class="lotteryNumContainer">
-												<u--image :src="redCircleSrc" width="24px" height="24px"></u--image>
-												<view class="lotteryNumber">18</view>
-											</view>
-											<view class="lotteryNumContainer">
-												<u--image :src="redCircleSrc" width="24px" height="24px"></u--image>
-												<view class="lotteryNumber">25</view>
-											</view>
-											<view class="lotteryNumContainer">
-												<u--image :src="redCircleSrc" width="24px" height="24px"></u--image>
-												<view class="lotteryNumber">32</view>
-											</view>
-											<view class="lotteryNumContainer">
-												<u--image :src="blueCircleSrc" width="24px" height="24px"></u--image>
-												<view class="lotteryNumber">14</view>
-											</view>
-											<view class="lotteryNumContainer">
-												<u--image :src="blueCircleSrc" width="24px" height="24px"></u--image>
-												<view class="lotteryNumber">14</view>
-											</view>
-											<view class="lotteryNumContainer">
-												<u--image :src="blueCircleSrc" width="24px" height="24px"></u--image>
-												<view class="lotteryNumber">14</view>
-											</view>
-											<view class="lotteryNumContainer">
-												<u--image :src="blueCircleSrc" width="24px" height="24px"></u--image>
-												<view class="lotteryNumber">14</view>
-											</view>
-											<view class="lotteryNumContainer">
-												<u--image :src="redCircleSrc" width="24px" height="24px"></u--image>
-												<view class="lotteryNumber">7</view>
-											</view>
-											<view class="lotteryNumContainer">
-												<u--image :src="redCircleSrc" width="24px" height="24px"></u--image>
-												<view class="lotteryNumber">8</view>
-											</view>
-											<view class="lotteryNumContainer">
-												<u--image :src="redCircleSrc" width="24px" height="24px"></u--image>
-												<view class="lotteryNumber">16</view>
-											</view>
-											<view class="lotteryNumContainer">
-												<u--image :src="redCircleSrc" width="24px" height="24px"></u--image>
-												<view class="lotteryNumber">18</view>
-											</view>
-											<view class="lotteryNumContainer">
-												<u--image :src="redCircleSrc" width="24px" height="24px"></u--image>
-												<view class="lotteryNumber">25</view>
-											</view>
-											<view class="lotteryNumContainer">
-												<u--image :src="redCircleSrc" width="24px" height="24px"></u--image>
-												<view class="lotteryNumber">32</view>
-											</view>
-											<view class="lotteryNumContainer">
-												<u--image :src="blueCircleSrc" width="24px" height="24px"></u--image>
-												<view class="lotteryNumber">14</view>
-											</view>
-											<view class="lotteryNumContainer">
-												<u--image :src="blueCircleSrc" width="24px" height="24px"></u--image>
-												<view class="lotteryNumber">14</view>
-											</view>
-											<view class="lotteryNumContainer">
-												<u--image :src="blueCircleSrc" width="24px" height="24px"></u--image>
-												<view class="lotteryNumber">14</view>
-											</view>
-											<view class="lotteryNumContainer">
-												<u--image :src="blueCircleSrc" width="24px" height="24px"></u--image>
-												<view class="lotteryNumber">14</view>
-											</view>
-										</view>
-									</view>
-									<view class="container2-3">
-										<view class="u-page__button-item action-button">
-											<u-button text="中奖详情" size="mini" plain shape="circle"
-												type="error"></u-button>
-										</view>
-										<view class="u-page__button-item action-button">
-											<u-button text="往期开奖" size="mini" plain shape="circle"
-												type="error"></u-button>
-										</view>
-										<view class="u-page__button-item action-button">
-											<u-button text="开奖通知" size="mini" plain shape="circle"
-												type="error"></u-button>
-										</view>
-										<view class="u-page__button-item action-button">
-											<u-button text="守号订阅" size="mini" plain shape="circle"
-												type="error"></u-button>
-										</view>
-									</view>
-								</view>
-							</view>
-						</view>
+						<lotteryItem :lotteryItemData="ssqData"></lotteryItem>
+						<lotteryItem :lotteryItemData="kl8Data"></lotteryItem>						
 					</swiper-item>
 				</swiper>
 			</view>
@@ -206,23 +30,145 @@
 </template>
 
 <script>
+	import lotteryItem from '@/components/lottery-item/lottery-item.vue'
 	export default {
+		components: {
+            lotteryItem
+		},
 		data() {
 			return {
-				srcSsq: '/static/ssq.png',
-				srcKl8: '/static/kl8.png',
-				redCircleSrc: '/static/redCircle.png',
-				blueCircleSrc: '/static/blueCircle.png',
-				ssqString: "\u53cc\u8272\u7403   \u7b2c2025021\u671f",
-				kl8String: "\u5feb\u4e508   \u7b2c2025049\u671f",
+				ssqData: {
+					picSrc: '/static/ssq.png',
+					lotteryDes: "\u53cc\u8272\u7403   \u7b2c2025021\u671f",
+					lotteryDate: "2025-02-27(四)",
+					lotteryFrequnency: "周二/四/日",
+					lotteryNumDataArr: [
+						{
+							color: "red",
+							number: "7"
+						},
+						{
+							color: "red",
+							number: "7"
+						},
+						{
+							color: "red",
+							number: "7"
+						},
+						{
+							color: "red",
+							number: "7"
+						},
+						{
+							color: "red",
+							number: "7"
+						},
+						{
+							color: "red",
+							number: "7"
+						},
+						{
+							color: "blue",
+							number: "8"
+						}
+					]
+				},
+				kl8Data: {
+					picSrc: '/static/kl8.png',
+					lotteryDes: "\u5feb\u4e508   \u7b2c2025049\u671f",
+					lotteryDate: "2025-02-27(四)",
+					lotteryFrequnency: "每日开奖",
+					lotteryNumDataArr: [
+						{
+							color: "red",
+							number: "7"
+						},
+						{
+							color: "red",
+							number: "7"
+						},
+						{
+							color: "red",
+							number: "7"
+						},
+						{
+							color: "red",
+							number: "7"
+						},
+						{
+							color: "red",
+							number: "7"
+						},
+						{
+							color: "red",
+							number: "7"
+						},
+						{
+							color: "red",
+							number: "8"
+						},
+						{
+							color: "red",
+							number: "7"
+						},
+						{
+							color: "red",
+							number: "7"
+						},
+						{
+							color: "red",
+							number: "7"
+						},
+						{
+							color: "red",
+							number: "7"
+						},
+						{
+							color: "red",
+							number: "7"
+						},
+						{
+							color: "red",
+							number: "7"
+						},
+						{
+							color: "red",
+							number: "8"
+						},
+						{
+							color: "red",
+							number: "7"
+						},
+						{
+							color: "red",
+							number: "8"
+						},
+						{
+							color: "red",
+							number: "8"
+						},
+						{
+							color: "red",
+							number: "8"
+						},
+						{
+							color: "red",
+							number: "8"
+						},
+						{
+							color: "red",
+							number: "8"
+						}
+					]
+				},
 				list: [{
 					name: '首页'
 				}, {
-					name: '福彩'
+					name: '\u798f\u5f69'
 				}, {
-					name: '体彩',
+					name: '\u4f53\u5f69',
 				}, {
-					name: '地方彩'
+					name: '\u5730\u65b9\u5f69'
 				}],
 				currentTab: 0
 			}
@@ -327,7 +273,7 @@
 		margin-right: 15px;
 	}
 
-	// .swiper-box {
-	// 	height: 600px;
-	// }
+	.swiper-box {
+		height: 600px;
+	}
 </style>

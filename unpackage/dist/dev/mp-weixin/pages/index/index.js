@@ -101,13 +101,7 @@ var components
 try {
   components = {
     uTabs: function () {
-      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-tabs/u-tabs */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-tabs/u-tabs")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-tabs/u-tabs.vue */ 167))
-    },
-    "u-Image": function () {
-      return Promise.all(/*! import() | uni_modules/uview-ui/components/u--image/u--image */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u--image/u--image")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u--image/u--image.vue */ 175))
-    },
-    uButton: function () {
-      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-button/u-button */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-button/u-button")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-button/u-button.vue */ 181))
+      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-tabs/u-tabs */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-tabs/u-tabs")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-tabs/u-tabs.vue */ 179))
     },
   }
 } catch (e) {
@@ -170,230 +164,120 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+var lotteryItem = function lotteryItem() {
+  __webpack_require__.e(/*! require.ensure | components/lottery-item/lottery-item */ "components/lottery-item/lottery-item").then((function () {
+    return resolve(__webpack_require__(/*! @/components/lottery-item/lottery-item.vue */ 203));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
 var _default = {
+  components: {
+    lotteryItem: lotteryItem
+  },
   data: function data() {
     return {
-      srcSsq: '/static/ssq.png',
-      srcKl8: '/static/kl8.png',
-      redCircleSrc: '/static/redCircle.png',
-      blueCircleSrc: '/static/blueCircle.png',
-      ssqString: "\u53CC\u8272\u7403   \u7B2C2025021\u671F",
-      kl8String: "\u5FEB\u4E508   \u7B2C2025049\u671F",
+      ssqData: {
+        picSrc: '/static/ssq.png',
+        lotteryDes: "\u53CC\u8272\u7403   \u7B2C2025021\u671F",
+        lotteryDate: "2025-02-27(四)",
+        lotteryFrequnency: "周二/四/日",
+        lotteryNumDataArr: [{
+          color: "red",
+          number: "7"
+        }, {
+          color: "red",
+          number: "7"
+        }, {
+          color: "red",
+          number: "7"
+        }, {
+          color: "red",
+          number: "7"
+        }, {
+          color: "red",
+          number: "7"
+        }, {
+          color: "red",
+          number: "7"
+        }, {
+          color: "blue",
+          number: "8"
+        }]
+      },
+      kl8Data: {
+        picSrc: '/static/kl8.png',
+        lotteryDes: "\u5FEB\u4E508   \u7B2C2025049\u671F",
+        lotteryDate: "2025-02-27(四)",
+        lotteryFrequnency: "每日开奖",
+        lotteryNumDataArr: [{
+          color: "red",
+          number: "7"
+        }, {
+          color: "red",
+          number: "7"
+        }, {
+          color: "red",
+          number: "7"
+        }, {
+          color: "red",
+          number: "7"
+        }, {
+          color: "red",
+          number: "7"
+        }, {
+          color: "red",
+          number: "7"
+        }, {
+          color: "red",
+          number: "8"
+        }, {
+          color: "red",
+          number: "7"
+        }, {
+          color: "red",
+          number: "7"
+        }, {
+          color: "red",
+          number: "7"
+        }, {
+          color: "red",
+          number: "7"
+        }, {
+          color: "red",
+          number: "7"
+        }, {
+          color: "red",
+          number: "7"
+        }, {
+          color: "red",
+          number: "8"
+        }, {
+          color: "red",
+          number: "7"
+        }, {
+          color: "red",
+          number: "8"
+        }, {
+          color: "red",
+          number: "8"
+        }, {
+          color: "red",
+          number: "8"
+        }, {
+          color: "red",
+          number: "8"
+        }, {
+          color: "red",
+          number: "8"
+        }]
+      },
       list: [{
         name: '首页'
       }, {
-        name: '福彩'
+        name: "\u798F\u5F69"
       }, {
-        name: '体彩'
+        name: "\u4F53\u5F69"
       }, {
-        name: '地方彩'
+        name: "\u5730\u65B9\u5F69"
       }],
       currentTab: 0
     };
