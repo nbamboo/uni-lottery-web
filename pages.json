@@ -7,10 +7,15 @@
 			}
 		},
 		{
-			"path" : "pages/custom/custom",
-			"style" : 
-			{
-				"navigationBarTitleText" : ""
+			"path": "pages/stick/stick",
+			"style": {
+				"navigationBarTitleText": "守号"
+			}
+		},
+		{
+			"path": "pages/about/about",
+			"style": {
+				"navigationBarTitleText": "我的"
 			}
 		}
 	],
@@ -21,26 +26,26 @@
 		"backgroundColor": "#F8F8F8"
 	},
 	"tabBar": {
-		"color": "#7A7E83",
-		"selectedColor": "#008cff",
+		"color": "#82848a",
+		"selectedColor": "#f56c6c",
 		"borderStyle": "black",
 		"backgroundColor": "#ffffff",
 		"list": [{
 				"pagePath": "pages/index/index",
-				"iconPath": "static/image/gj1.png",
-				"selectedIconPath": "static/image/gj2.png",
+				"iconPath": "/static/image/lottery.png",
+				"selectedIconPath": "/static/image/lottery-active.png",
 				"text": "开奖"
 			},
 			{
-				"pagePath": "pages/exam/exam",
-				"iconPath": "static/image/st1.png",
-				"selectedIconPath": "static/image/st2.png",
+				"pagePath": "pages/stick/stick",
+				"iconPath": "/static/image/stick.png",
+				"selectedIconPath": "/static/image/stick-active.png",
 				"text": "守号"
 			},
 			{
 				"pagePath": "pages/about/about",
-				"iconPath": "static/image/gy1.png",
-				"selectedIconPath": "static/image/gy2.png",
+				"iconPath": "/static/image/about.png",
+				"selectedIconPath": "/static/image/about-active.png",
 				"text": "我的"
 			}
 		]
