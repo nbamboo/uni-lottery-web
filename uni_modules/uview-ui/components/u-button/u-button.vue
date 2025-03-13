@@ -255,10 +255,10 @@ export default {
         textSize() {
             let fontSize = 14,
                 { size } = this;
-            if (size === "large") fontSize = 16;
-            if (size === "normal") fontSize = 14;
-            if (size === "small") fontSize = 12;
-            if (size === "mini") fontSize = 10;
+            if (size === "large") fontSize = 18;
+            if (size === "normal") fontSize = 16;
+            if (size === "small") fontSize = 14;
+            if (size === "mini") fontSize = 12;
             return fontSize;
         },
     },

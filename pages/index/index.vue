@@ -1,7 +1,10 @@
 <template>
 	<view>
-		<view class="u-demo-block">
-			<view class="u-demo-block__content">
+		<view v-if="loading" class="skeleton-container">
+			<u-skeleton rows="3" loading></u-skeleton>
+		</view>
+		<view v-else>
+			<view>
 				<u-tabs :current="currentTab" @click="click" @change="changeTab" :list="list" lineWidth="40"
 					lineColor="#f56c6c" :activeStyle="{
 						color: '#303133',
@@ -16,12 +19,20 @@
 			<view>
 				<swiper class="swiper-box" :current="currentTab" @change="swiperChange">
 					<swiper-item>
-						<lotteryItem :lotteryItemData="ssqData"></lotteryItem>
-						<lotteryItem :lotteryItemData="kl8Data"></lotteryItem>	
+						<lotteryItem :lotteryItemData="ssqData[0]"></lotteryItem>
+						<lotteryItem :lotteryItemData="kl8Data[0]"></lotteryItem>
 					</swiper-item>
 					<swiper-item>
-						<lotteryItem :lotteryItemData="ssqData"></lotteryItem>
-						<lotteryItem :lotteryItemData="kl8Data"></lotteryItem>						
+						<lotteryItem :lotteryItemData="ssqData[0]"></lotteryItem>
+						<lotteryItem :lotteryItemData="kl8Data[0]"></lotteryItem>
+					</swiper-item>
+					<swiper-item>
+						<lotteryItem :lotteryItemData="ssqData[0]"></lotteryItem>
+						<lotteryItem :lotteryItemData="kl8Data[0]"></lotteryItem>
+					</swiper-item>
+					<swiper-item>
+						<lotteryItem :lotteryItemData="ssqData[0]"></lotteryItem>
+						<lotteryItem :lotteryItemData="kl8Data[0]"></lotteryItem>
 					</swiper-item>
 				</swiper>
 			</view>
@@ -33,134 +44,12 @@
 	import lotteryItem from '@/components/lottery-item/lottery-item.vue'
 	export default {
 		components: {
-            lotteryItem
+			lotteryItem
 		},
 		data() {
 			return {
-				ssqData: {
-					picSrc: '/static/ssq.png',
-					lotteryDes: "\u53cc\u8272\u7403   \u7b2c2025021\u671f",
-					lotteryDate: "2025-02-27(四)",
-					lotteryFrequnency: "周二/四/日",
-					lotteryNumDataArr: [
-						{
-							color: "red",
-							number: "7"
-						},
-						{
-							color: "red",
-							number: "7"
-						},
-						{
-							color: "red",
-							number: "7"
-						},
-						{
-							color: "red",
-							number: "7"
-						},
-						{
-							color: "red",
-							number: "7"
-						},
-						{
-							color: "red",
-							number: "7"
-						},
-						{
-							color: "blue",
-							number: "8"
-						}
-					]
-				},
-				kl8Data: {
-					picSrc: '/static/kl8.png',
-					lotteryDes: "\u5feb\u4e508   \u7b2c2025049\u671f",
-					lotteryDate: "2025-02-27(四)",
-					lotteryFrequnency: "每日开奖",
-					lotteryNumDataArr: [
-						{
-							color: "red",
-							number: "7"
-						},
-						{
-							color: "red",
-							number: "7"
-						},
-						{
-							color: "red",
-							number: "7"
-						},
-						{
-							color: "red",
-							number: "7"
-						},
-						{
-							color: "red",
-							number: "7"
-						},
-						{
-							color: "red",
-							number: "7"
-						},
-						{
-							color: "red",
-							number: "8"
-						},
-						{
-							color: "red",
-							number: "7"
-						},
-						{
-							color: "red",
-							number: "7"
-						},
-						{
-							color: "red",
-							number: "7"
-						},
-						{
-							color: "red",
-							number: "7"
-						},
-						{
-							color: "red",
-							number: "7"
-						},
-						{
-							color: "red",
-							number: "7"
-						},
-						{
-							color: "red",
-							number: "8"
-						},
-						{
-							color: "red",
-							number: "7"
-						},
-						{
-							color: "red",
-							number: "8"
-						},
-						{
-							color: "red",
-							number: "8"
-						},
-						{
-							color: "red",
-							number: "8"
-						},
-						{
-							color: "red",
-							number: "8"
-						},
-						{
-							color: "red",
-							number: "8"
-						}
-					]
-				},
+				ssqData: [],
+				kl8Data: [],
 				list: [{
 					name: '首页'
 				}, {
@@ -170,10 +59,29 @@
 				}, {
 					name: '\u5730\u65b9\u5f69'
 				}],
-				currentTab: 0
+				currentTab: 0,
+				loading: true
 			}
 		},
+		onLoad() {
+			const app = getApp();
+			if (app.globalData.isDataReady) {
+				this.loadData();
+			} else {
+				uni.$on('dataReady', this.loadData);
+			}
+		},
+		onUnload() {
+			uni.$off('dataReady', this.loadData);
+		},
 		methods: {
+			loadData() {
+				console.log('数据加载中...');
+				const app = getApp();
+				this.ssqData = app.globalData.preloadData?.ssqData || [];
+				this.kl8Data = app.globalData.preloadData?.kl8Data || [];
+				this.loading = false;
+			},
 			click(item) {
 				this.currentTab = Number(item.index);
 			},

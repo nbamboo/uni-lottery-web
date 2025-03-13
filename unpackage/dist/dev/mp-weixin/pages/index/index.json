@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "阳光开奖",
   "usingComponents": {
+    "u-skeleton": "/uni_modules/uview-ui/components/u-skeleton/u-skeleton",
     "u-tabs": "/uni_modules/uview-ui/components/u-tabs/u-tabs",
     "lottery-item": "/components/lottery-item/lottery-item"
   }
