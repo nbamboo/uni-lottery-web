@@ -3,25 +3,42 @@
 		globalData: {
 			preloadData: {
 				ssqData: null,
-				kl8Data: null
+				kl8Data: null,
+				dltData:null
 			},
 			isDataReady: false
 		},
 		onLaunch: function() {
+			
+			
+				
+			
+			
+			
 			console.log('App Launch')
+			
+			uniCloud.callFunction({
+				name: "myTestCloudFunction",
+				data: {
+					name: "nbamboo",
+					url:  "baidu.com"
+				}
+			}).then(res => {
+				console.log(res)
+			})
 			// 先加载数据，但不等待所有接口都返回
 			uniCloud.callFunction({
 				name: "getCurrentSsqLotteryInfo"
 			}).then(res => {
 				this.globalData.preloadData.ssqData = res.result.data;
-				uni.$emit('dataReady'); // 单独触发更新
-			});
+				uni.$emit('dataReady');
+			})
 
 			uniCloud.callFunction({
 				name: "getCurrentKl8LotteryInfo"
 			}).then(res => {
 				this.globalData.preloadData.kl8Data = res.result.data;
-				uni.$emit('dataReady'); // 单独触发更新
+				uni.$emit('dataReady');
 			});
 		}
 	}
