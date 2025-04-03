@@ -1,6 +1,6 @@
 <template>
 	<view class="lotteryNumContainer">
-		<u--image :src="circleSrc" width="24px" height="24px"></u--image>
+		<image :src="circleSrc" style="width: 24px; height: 24px;"></image>
 		<view class="lotteryNumber">{{lotteryNumData.number}}</view>
 	</view>
 </template>
@@ -20,7 +20,7 @@
 		},
 		methods: {
 			selectCircleSrc(color) {
-				// 这里可以根据颜色返回不同的图片路径
+				// 根据颜色返回不同的图片路径
 				if (color === 'red') {
 					return '/static/redCircle.png';
 				} else if (color === 'blue') {

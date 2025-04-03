@@ -1,8 +1,8 @@
 <template>
 	<view class="container1">
 		<view class="container1-1">
-			<view class="u-page__image-item">
-				<u--image :src="lotteryItemData.picSrc" width="40px" height="40px"></u--image>
+			<view>
+				<image style="width: 40px; height: 40px;" :src="lotteryItemData.picSrc"></image>
 			</view>
 		</view>
 		<view class="container1-2">
@@ -40,7 +40,12 @@
 			lotteryNum
 		},
 		name: "lottery-item",
-		props: ['lotteryItemData'],
+		props: {
+		  lotteryItemData: {
+		    type: Object,
+		    default: () => ({ picSrc: '' })
+		  }
+		},
 		data() {
 			return {};
 		}

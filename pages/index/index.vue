@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<view v-if="loading" class="skeleton-container">
-			<u-skeleton rows="3" loading></u-skeleton>
+			<u-skeleton rows="20" loading></u-skeleton>
 		</view>
 		<view v-else>
 			<view>
@@ -64,19 +64,13 @@
 			}
 		},
 		onLoad() {
-			const app = getApp();
-			if (app.globalData.isDataReady) {
-				this.loadData();
-			} else {
-				uni.$on('dataReady', this.loadData);
-			}
+			uni.$on('dataReady', this.loadData);
 		},
 		onUnload() {
 			uni.$off('dataReady', this.loadData);
 		},
 		methods: {
 			loadData() {
-				console.log('数据加载中...');
 				const app = getApp();
 				this.ssqData = app.globalData.preloadData?.ssqData || [];
 				this.kl8Data = app.globalData.preloadData?.kl8Data || [];

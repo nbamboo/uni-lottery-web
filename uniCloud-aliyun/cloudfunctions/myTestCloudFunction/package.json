@@ -1,0 +1,7 @@
+{
+  "name": "myTestCloudFunction",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

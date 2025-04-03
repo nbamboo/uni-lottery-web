@@ -6,26 +6,17 @@
 				kl8Data: null,
 				dltData:null
 			},
-			isDataReady: false
 		},
-		onLaunch: function() {
-			
-			
-				
-			
-			
-			
-			console.log('App Launch')
-			
+		onLaunch: function() {		
+			console.log('App Launch')	
 			uniCloud.callFunction({
-				name: "myTestCloudFunction",
-				data: {
-					name: "nbamboo",
-					url:  "baidu.com"
-				}
+				name: "myTestCloudFunction"
 			}).then(res => {
 				console.log(res)
 			})
+			
+			
+			
 			// 先加载数据，但不等待所有接口都返回
 			uniCloud.callFunction({
 				name: "getCurrentSsqLotteryInfo"
