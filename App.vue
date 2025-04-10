@@ -4,18 +4,21 @@
 			preloadData: {
 				ssqData: null,
 				kl8Data: null,
-				dltData:null
+				dltData: null
 			},
+			lotteryDetailData: {
+				ssqDetailData: null,
+				kl8DetailData: null,
+				dltDetailData: null
+			}
 		},
 		onLaunch: function() {		
-			console.log('App Launch')	
-			uniCloud.callFunction({
-				name: "myTestCloudFunction"
-			}).then(res => {
-				console.log(res)
-			})
-			
-			
+			// console.log('App Launch')	
+			// uniCloud.callFunction({
+			// 	name: "myTestCloudFunction"
+			// }).then(res => {
+			// 	console.log(res)
+			// })
 			
 			// 先加载数据，但不等待所有接口都返回
 			uniCloud.callFunction({
@@ -31,6 +34,22 @@
 				this.globalData.preloadData.kl8Data = res.result.data;
 				uni.$emit('dataReady');
 			});
+			
+			// 获取中奖详情
+			uniCloud.callFunction({
+				name: "getCurrentSsqLotteryDetailData"
+			}).then(res => {
+				this.globalData.lotteryDetailData.ssqDetailData = res.result.data;
+			})
+			
+			uniCloud.callFunction({
+				name: "getCurrentKl8LotteryDetailData"
+			}).then(res => {
+				this.globalData.lotteryDetailData.kl8DetailData = res.result.data;
+			})
+
+			
+			
 		}
 	}
 </script>

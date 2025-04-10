@@ -1,6 +1,6 @@
 <template>
 	<view class="lotteryNumContainer">
-		<image :src="circleSrc" style="width: 24px; height: 24px;"></image>
+		<image :src="circleSrc" style="width: 48rpx; height: 48rpx;"></image>
 		<view class="lotteryNumber">{{lotteryNumData.number}}</view>
 	</view>
 </template>
@@ -39,14 +39,14 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding-right: 5px;
-		padding-bottom: 2.5px;
+		padding-right: 10rpx;
+		padding-bottom: 5rpx;
 	}
 
 	.lotteryNumber {
 		position: absolute;
 		color: white;
-		font-size: 14px;
+		font-size: 28rpx;
 		font-weight: bold;
 	}
 </style>

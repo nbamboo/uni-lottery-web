@@ -2,7 +2,7 @@
 	<view class="container1">
 		<view class="container1-1">
 			<view>
-				<image style="width: 40px; height: 40px;" :src="lotteryItemData.picSrc"></image>
+				<image style="width: 80rpx; height: 80rpx;" :src="lotteryItemData.picSrc"></image>
 			</view>
 		</view>
 		<view class="container1-2">
@@ -17,7 +17,7 @@
 			</view>
 			<view class="container1-2-3">
 				<view class="u-page__button-item action-button">
-					<u-button text="中奖详情" size="mini" plain shape="circle" type="error"></u-button>
+					<u-button text="中奖详情" size="mini" plain shape="circle" type="error" @click="detailClick"></u-button>
 				</view>
 				<view class="u-page__button-item action-button">
 					<u-button text="往期开奖" size="mini" plain shape="circle" type="error"></u-button>
@@ -48,6 +48,13 @@
 		},
 		data() {
 			return {};
+		},
+		methods: {
+			detailClick() {
+				uni.navigateTo({
+					url: "/pages/detail/detail"
+				})
+			}
 		}
 	}
 </script>
@@ -58,9 +65,9 @@
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
-		padding: 10px;
-		margin-bottom: 10px;
-		box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+		padding: 20rpx;
+		margin-bottom: 20rpx;
+		box-shadow: 4rpx 4rpx 20rpx rgba(0, 0, 0, 0.1);
 
 	}
 
@@ -81,7 +88,7 @@
 	.container1-2-1 {
 		display: flex;
 		justify-content: space-between;
-		padding-bottom: 10px;
+		padding-bottom: 20rpx;
 	}
 
 	// 球容器
@@ -89,7 +96,7 @@
 		display: flex;
 		justify-content: flex-start;
 		flex-wrap: wrap;
-		padding-bottom: 10px;
+		padding-bottom: 20rpx;
 	}
 
 	//按钮容器
@@ -104,20 +111,20 @@
 	}
 
 	.lotteryDes {
-		font-size: 12px;
+		font-size: 26rpx;
 		font-weight: bold;
 	}
 
 	.lotteryDate {
-		font-size: 12px;
+		font-size: 26rpx;
 	}
 
 	.lotteryFrequnency {
-		font-size: 12px;
-		padding-right: 10px;
+		font-size: 26rpx;
+		padding-right: 20rpx;
 	}
 
 	.action-button {
-		margin-right: 5px;
+		margin-right: 10rpx;
 	}
 </style>

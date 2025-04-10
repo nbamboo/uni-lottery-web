@@ -9,11 +9,11 @@
 					lineColor="#f56c6c" :activeStyle="{
 						color: '#303133',
 						fontWeight: 'bold',
-						transform: 'scale(1.15)'
+						transform: 'scale(1.35)'
 					}" :inactiveStyle="{
 						color: '#606266',
-						transform: 'scale(1.05)'
-					}" itemStyle="padding-left: 15px; padding-right: 15px; height: 34px;">
+						transform: 'scale(1.25)'
+					}" itemStyle="padding-left: 40rpx; padding-right: 40rpx; height: 80rpx;">
 				</u-tabs>
 			</view>
 			<view>
@@ -90,92 +90,7 @@
 </script>
 
 <style lang="scss">
-	// 总容器
-	.container1 {
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-		padding: 10px;
-		margin-bottom: 10px;
-		box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-
-	}
-
-	//图片与信息容器
-	.container2 {
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-	}
-
-	// 文字容器
-	.container2-1 {
-		display: flex;
-		justify-content: space-between;
-		padding-bottom: 10px;
-	}
-
-	// 球容器
-	.container2-2 {
-		display: flex;
-		flex-direction: column;
-		padding-bottom: 10px;
-	}
-
-	//按钮容器
-	.container2-3 {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
-
-
-	.container3 {
-		display: flex;
-		justify-content: flex-start;
-		flex-wrap: wrap;
-	}
-
-	.image-type {
-		padding: 0 10px 10px 0;
-	}
-
-
-	.lotteryDesType {
-		font-size: 12px;
-		font-weight: bold;
-	}
-
-	.lotteryDesDate {
-		font-size: 12px;
-	}
-
-	.lotteryDesWeekday {
-		font-size: 12px;
-		padding-right: 10px;
-	}
-
-	.lotteryNumContainer {
-		position: relative;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		padding-right: 5px;
-		padding-bottom: 2.5px;
-	}
-
-	.lotteryNumber {
-		position: absolute;
-		color: white;
-		font-size: 14px;
-		font-weight: bold;
-	}
-
-	.action-button {
-		margin-right: 15px;
-	}
-
 	.swiper-box {
-		height: 600px;
+		height: 1200rpx;
 	}
 </style>
